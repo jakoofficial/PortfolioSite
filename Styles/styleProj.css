@@ -1,0 +1,898 @@
+﻿* { /*Everything*/
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    color: rgb(216, 216, 216);
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+}
+/*http://jsfiddle.net/5wa3X/6/ */
+/*Phones*/
+@media only screen and (min-width: 359px) and (max-width: 361px) {
+    header #title h1 {
+        font-size: 24px;
+    }
+
+    header #title p {
+        font-size: 16px;
+        padding-top: 5px;
+        padding-left: 0px;
+    }
+
+    section #pr-content {
+        min-height: 82.1vh;
+        padding: 0px 0px 0px 0px;
+    }
+
+        section #pr-content .content {
+            min-height: 200px;
+            padding: 0px 0px 0px 0px;
+            display: inline-block;
+            width: 359px;
+        }
+
+        section #pr-content .project {
+            border-bottom: 1px solid rgb(99, 99, 99);
+            display: block;
+            width: 389px;
+            height: 450px;
+            transition: height 0.5s, z-index 0.5s;
+            margin-bottom: 10px;
+            background-color: rgb(40, 40, 40);
+        }
+
+            section #pr-content .project:first-of-type {
+                border-top: 1px solid rgb(99, 99, 99);
+            }
+
+            section #pr-content .project:last-of-type {
+                border-bottom: none;
+            }
+
+        section #pr-content .invis {
+            visibility: hidden;
+        }
+
+        section #pr-content .project p {
+            display: block;
+            position: relative;
+            top: 8px;
+            height: 165px;
+            width: 340px;
+            padding: 0px 0px 0px 10px;
+            font-size: 18px;
+        }
+
+        section #pr-content .content h2 {
+            position: relative;
+            top: 4px;
+            left: 0px;
+            width: 359px;
+            height: 30px;
+            text-align: center;
+            color: rgb(233, 233, 233);
+            z-index: 30;
+            /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        section #pr-content .tba {
+            height: 200px;
+            width: 389px;
+        }
+
+            section #pr-content .tba .pr-img img {
+                margin-top: 50px;
+                height: 150px;
+            }
+
+            section #pr-content .tba h2 {
+                top: -75px;
+                left: 0px;
+                width: 359px;
+                font-size: 25px;
+            }
+
+        section #pr-content .project .pr-img {
+            max-height: 200px;
+            max-width: 359px;
+            overflow: hidden;
+        }
+
+        section #pr-content .project img {
+            display: block;
+            margin-top: 0px;
+            min-height: 200px;
+            width: 100%;
+            overflow: hidden;
+        }
+}
+@media only screen and (min-width: 362px) and (max-width: 391px) {
+    header #title h1{
+        font-size: 26px;
+    }
+    header #title p{
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    section #pr-content {
+        min-height: 82.1vh;
+        padding: 0px 0px 0px 0px;
+    }
+
+        section #pr-content .content {
+            min-height: 200px;
+            padding: 0px 0px 0px 0px;
+            display: inline-block;
+            width: 389px;
+        }
+
+        section #pr-content .project {
+            border-bottom: 1px solid rgb(99, 99, 99);
+            display: block;
+            width: 389px;
+            height: 450px;
+            transition: height 0.5s, z-index 0.5s;
+            margin-bottom: 10px;
+            background-color: rgb(40, 40, 40);
+        }
+
+            section #pr-content .project:first-of-type {
+                border-top: 1px solid rgb(99, 99, 99);
+            }
+
+            section #pr-content .project:last-of-type {
+                border-bottom: none;
+            }
+
+        section #pr-content .invis {
+            visibility: hidden;
+        }
+
+        section #pr-content .project p {
+            display: block;
+            position: relative;
+            top: 8px;
+            height: 165px;
+            width: 365px;
+            padding: 0px 0px 0px 10px;
+            font-size: 18px;
+        }
+
+        section #pr-content .content h2 {
+            position: relative;
+            top: 4px;
+            left: -10px;
+            width: 412px;
+            height: 30px;
+            text-align: center;
+            color: rgb(233, 233, 233);
+            z-index: 30;
+            /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        section #pr-content .tba {
+            height: 200px;
+            width: 389px;
+        }
+
+            section #pr-content .tba .pr-img img {
+                margin-top: 50px;
+                height: 150px;
+            }
+
+            section #pr-content .tba h2 {
+                top: -75px;
+                left: 0px;
+                width: 400px;
+                font-size: 25px;
+            }
+
+        section #pr-content .project .pr-img {
+            max-height: 200px;
+            overflow: hidden;
+        }
+
+        section #pr-content .project img {
+            display: block;
+            margin-top: 0px;
+            min-height: 200px;
+            width: 100%;
+            overflow: hidden;
+        }
+}
+@media only screen and (min-width: 392px) and (max-width: 415px) {
+    section #pr-content {
+        min-height: 82.1vh;
+        padding: 0px 0px 0px 0px;
+    }
+
+        section #pr-content .content {
+            min-height: 200px;
+            padding: 0px 0px 0px 0px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        section #pr-content .project {
+            border-bottom: 1px solid rgb(99, 99, 99);
+            display:block;
+            width: 412px;
+            height: 450px;
+            transition: height 0.5s, z-index 0.5s;
+            margin-bottom: 10px;
+            background-color: rgb(40, 40, 40);
+        }
+            section #pr-content .project:first-of-type {
+                border-top: 1px solid rgb(99, 99, 99);
+            }
+        section #pr-content .project:last-of-type {
+            border-bottom: none;
+        }
+
+        section #pr-content .invis {
+            visibility: hidden;
+        }
+
+        section #pr-content .project p {
+            display: block;
+            position: relative;
+            top: 8px;
+            height: 165px;
+            min-width: 50px;
+            padding: 0px 0px 0px 10px;
+            font-size: 18px;
+        }
+
+        section #pr-content .content h2 {
+            position: relative;
+            top: 4px;
+            left: 0px;
+            width: 412px;
+            height: 30px;
+            text-align: center;
+            color: rgb(233, 233, 233);
+            z-index: 30;
+            /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+        }
+        section #pr-content .tba {
+            height: 200px;
+            width: 412px;
+        }
+        section #pr-content .tba .pr-img img {
+            margin-top: 50px;
+            height: 150px;
+        }
+
+        section #pr-content .tba h2 {
+            top: -75px;
+            left: 0px;
+            width: 400px;
+            font-size: 25px;
+        }
+        section #pr-content .project .pr-img{
+            max-height: 200px;
+            overflow: hidden;
+        }
+        section #pr-content .project img {
+            display: block;
+            margin-top: 0px;
+            min-height: 200px;
+            width: 100%;
+            overflow: hidden;
+        }
+}
+/*Tablets*/
+@media only screen and (min-width: 600px) and (max-width: 766px) {
+    section #pr-content {
+        min-height: 82.1vh;
+        padding: 0px 0px 0px 0px;
+    }
+
+        section #pr-content .content {
+            min-height: 200px;
+            padding: 0px 0px 0px 0px;
+            margin-left: 6.5%;
+            display: inline-block;
+            width: 100%;
+        }
+
+        section #pr-content .project {
+            border: 1px solid rgb(99, 99, 99);
+            width: 675px;
+            height: 200px;
+            transition: height 0.5s, z-index 0.5s;
+            background-color: rgb(40, 40, 40);
+        }
+
+        section #pr-content .invis {
+            visibility: hidden;
+        }
+
+        section #pr-content .project p {
+            display: block;
+            position: relative;
+            top: 5px;
+            height: 165px;
+            width: 400px;
+            float: left;
+            padding: 0px 0px 0px 10px;
+        }
+
+        section #pr-content .content h2 {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 500px;
+            height: 30px;
+            text-align: center;
+            color: rgb(233, 233, 233);
+            z-index: 30;
+            /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        section #pr-content .tba .pr-img img {
+            margin-top: 50px;
+            height: 150px;
+        }
+
+        section #pr-content .tba h2 {
+            top: 40%;
+            left: 75px;
+        }
+
+        section #pr-content .project img {
+            margin-top: 0px;
+            height: 200px;
+            width: 250px;
+            float: left;
+        }
+}
+@media only screen and (min-width: 767px) and (max-width: 768px) {
+    section #pr-content {
+        min-height: 82.1vh;
+        padding: 0px 0px 0px 0px;
+    }
+
+        section #pr-content .content {
+            min-height: 200px;
+            padding: 0px 0px 0px 0px;
+            margin-left: 6.5%;
+            display: inline-block;
+            width: 100%;
+        }
+
+        section #pr-content .project {
+            border: 1px solid rgb(99, 99, 99);
+            width: 675px;
+            height: 200px;
+            transition: height 0.5s, z-index 0.5s;
+            background-color: rgb(40, 40, 40);
+        }
+
+        section #pr-content .invis {
+            visibility: hidden;
+        }
+
+        section #pr-content .project p {
+            display: block;
+            position: relative;
+            top: 5px;
+            height: 165px;
+            width: 400px;
+            float: left;
+            padding: 0px 0px 0px 10px;
+        }
+
+        section #pr-content .content h2 {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 500px;
+            height: 30px;
+            text-align: center;
+            color: rgb(233, 233, 233);
+            z-index: 30;
+            /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        section #pr-content .tba .pr-img img {
+            margin-top: 50px;
+            height: 150px;
+        }
+
+        section #pr-content .tba h2 {
+            top: 40%;
+            left: 75px;
+        }
+
+        section #pr-content .project img {
+            margin-top: 0px;
+            height: 200px;
+            width: 250px;
+            float: left;
+        }
+}
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+    section #pr-content {
+        min-height: 82.1vh;
+        padding: 0px 0px 0px 0px;
+    }
+
+        section #pr-content .content {
+            min-height: 200px;
+            padding: 0px 0px 0px 0px;
+            margin-left: 8%;
+            display: inline-block;
+            width: 100%;
+        }
+
+        section #pr-content .project {
+            border: 1px solid rgb(99, 99, 99);
+            width: 675px;
+            height: 200px;
+            transition: height 0.5s, z-index 0.5s;
+            background-color: rgb(40, 40, 40);
+        }
+
+        section #pr-content .invis {
+            visibility: hidden;
+        }
+
+        section #pr-content .project p {
+            display: block;
+            position:relative;
+            top: 5px;
+            height: 165px;
+            width: 400px;
+            float:left;
+            padding: 0px 0px 0px 10px;
+        }
+
+        section #pr-content .content h2 {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 500px;
+            height: 30px;
+            text-align: center;
+            color: rgb(233, 233, 233);
+            z-index: 30;
+            /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+        }
+        section #pr-content .tba .pr-img img {
+            margin-top: 50px;
+            height: 150px;
+        }
+        section #pr-content .tba h2 {
+            top: 40%;
+            left: 75px;
+        }
+        section #pr-content .project img {
+            margin-top: 0px;
+            height: 200px;
+            width: 250px;
+            float: left;
+        }
+}
+@media only screen and (min-width: 801px) and (max-width: 963px) {
+    section #pr-content {
+        min-height: 82.1vh;
+        padding: 0px 0px 0px 0px;
+    }
+
+        section #pr-content .content {
+            min-height: 200px;
+            padding: 0px 0px 0px 0px;
+            margin-left: 12%;
+            display: inline-block;
+            width: 100%;
+        }
+
+        section #pr-content .project {
+            border: 1px solid rgb(99, 99, 99);
+            width: 750px;
+            height: 200px;
+            transition: height 0.5s, z-index 0.5s;
+            background-color: rgb(40, 40, 40);
+        }
+        section #pr-content .project a{
+        }
+        section #pr-content .invis {
+            visibility: hidden;
+        }
+
+        section #pr-content .project p {
+            position:relative;
+            top: -115%;
+            left: 46.5%;
+            width: 375px;
+            padding: 10px 10px 0px 10px;
+        }
+
+        section #pr-content .content h2 {
+            position: relative;
+            top: -59%;
+            left: -26%;
+            text-align:center;
+            color: rgb(233, 233, 233);
+            z-index: 30;
+            /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+        }
+        section #pr-content .project .pr-img {
+            max-height: 200px;
+        }
+
+        section #pr-content .project img {
+            width: 350px;
+        }
+}
+/*Desktop*/
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+    section #pr-content {
+        min-height: 82.1vh;
+        padding: 0px 0px 0px 0px;
+        overflow: hidden;
+    }
+
+        section #pr-content .content {
+            position: relative;
+            height: 200px;
+            padding: 25px 0px 15px 0px;
+            margin-left: 12%;
+        }
+
+        section #pr-content .project {
+            position: absolute;
+            border: 1px solid rgb(99, 99, 99);
+            width: 350px;
+            height: 200px;
+            overflow: hidden;
+            z-index: 1;
+            transition: height 0.5s, z-index 0.5s;
+            float: left;
+            background-color: rgb(40, 40, 40);
+        }
+
+        section #pr-content .content:nth-child(odd) {
+            animation: transitionIn 1s;
+        }
+
+        section #pr-content .content:nth-child(even) {
+            opacity: 0;
+            animation: transitionIn 1s forwards;
+            animation-delay: .25s;
+        }
+
+        section #pr-content .invis {
+            visibility: hidden;
+        }
+
+        section #pr-content .project p {
+            padding: 10px 10px 0px 10px;
+        }
+
+        section #pr-content .content h2 {
+            position: absolute;
+            top: 42%;
+            width: 100%;
+            text-align: center;
+            color: rgb(233, 233, 233);
+            z-index: 30;
+            /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        section #pr-content .a {
+            left: -4%;
+        }
+
+        section #pr-content .b {
+            left: 28%;
+        }
+
+        section #pr-content .c {
+            left: 60%;
+        }
+
+        section #pr-content .project .pr-img {
+            max-height: 200px;
+            overflow: hidden;
+        }
+
+        section #pr-content .project img {
+            width: 350px;
+        }
+
+        section #pr-content .project:hover {
+            height: 400px;
+            position: relative;
+            z-index: 20;
+            margin-bottom: 10px;
+        }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1550px) {
+    section #pr-content {
+        min-height: 82.1vh;
+        padding: 0px 0px 0px 0px;
+        overflow: hidden;
+    }
+
+        section #pr-content .content {
+            position: relative;
+            height: 200px;
+            padding: 25px 0px 50px 0px;
+            margin-left: 12%;
+        }
+
+        section #pr-content .project {
+            position: absolute;
+            border: 1px solid rgb(99, 99, 99);
+            width: 350px;
+            height: 200px;
+            overflow: hidden;
+            z-index: 1;
+            transition: height 0.5s, z-index 0.5s;
+            float: left;
+            background-color: rgb(40, 40, 40);
+        }
+
+        section #pr-content .content:nth-child(odd) {
+            animation: transitionIn 1s;
+        }
+
+        section #pr-content .content:nth-child(even) {
+            opacity: 0;
+            animation: transitionIn 1s forwards;
+            animation-delay: .25s;
+        }
+
+        section #pr-content .invis {
+            visibility: hidden;
+        }
+
+        section #pr-content .project p {
+            padding: 10px 10px 0px 10px;
+        }
+
+        section #pr-content .content h2 {
+            position: absolute;
+            top: 42%;
+            width: 100%;
+            text-align: center;
+            color: rgb(233, 233, 233);
+            z-index: 30;
+            /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        section #pr-content .a {
+            left: -0.5%;
+        }
+
+        section #pr-content .b {
+            left: 29.75%;
+        }
+
+        section #pr-content .c {
+            left: 60%;
+        }
+
+        section #pr-content .project .pr-img {
+            max-height: 200px;
+            overflow: hidden;
+        }
+
+        section #pr-content .project img {
+            width: 350px;
+        }
+
+        section #pr-content .project:hover {
+            height: 400px;
+            position: relative;
+            z-index: 20;
+            margin-bottom: 10px;
+        }
+}
+@media only screen and (min-width:1550px) and (max-width: 1600px) {
+    section #pr-content {
+        min-height: 82.1vh;
+        padding: 0px 0px 0px 0px;
+        overflow: hidden;
+    }
+
+        section #pr-content .content {
+            position: relative;
+            height: 200px;
+            padding: 25px 0px 65px 0px;
+            margin-left: 12%;
+        }
+
+        section #pr-content .project {
+            position: absolute;
+            border: 1px solid rgb(99, 99, 99);
+            width: 350px;
+            height: 200px;
+            overflow: hidden;
+            z-index: 1;
+            transition: height 0.5s, z-index 0.5s;
+            float: left;
+            background-color: rgb(40, 40, 40);
+        }
+
+        section #pr-content .content:nth-child(odd) {
+            animation: transitionIn 1s;
+        }
+
+        section #pr-content .content:nth-child(even) {
+            opacity: 0;
+            animation: transitionIn 1s forwards;
+            animation-delay: .25s;
+        }
+
+        section #pr-content .invis {
+            visibility: hidden;
+        }
+
+        section #pr-content .project p {
+            padding: 10px 10px 0px 10px;
+        }
+
+        section #pr-content .content h2 {
+            position: absolute;
+            top: 42%;
+            width: 100%;
+            text-align: center;
+            color: rgb(233, 233, 233);
+            z-index: 30;
+            /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        section #pr-content .a {
+            left: 2.5%;
+        }
+
+        section #pr-content .b {
+            left: 31.5%;
+        }
+
+        section #pr-content .c {
+            left: 60%;
+        }
+
+        section #pr-content .project .pr-img {
+            max-height: 200px;
+            overflow: hidden;
+        }
+
+        section #pr-content .project img {
+            width: 350px;
+        }
+
+        section #pr-content .project:hover {
+            height: 400px;
+            position: relative;
+            z-index: 20;
+            margin-bottom: 10px;
+        }
+}
+@media only screen and (min-width: 1900px) and (max-width: 1920px) 
+{
+    section #pr-content {
+        min-height: 82.1vh;
+        padding: 0px 0px 0px 0px;
+        overflow: hidden;
+    }
+
+        section #pr-content .content {
+            position: relative;
+            height: 200px;
+            padding: 25px 0px 50px 0px;
+            margin-left: 12%;
+        }
+
+        section #pr-content .project {
+            position: absolute;
+            border: 1px solid rgb(99, 99, 99);
+            width: 350px;
+            height: 200px;
+            overflow: hidden;
+            z-index: 1;
+            transition: height 0.5s, z-index 0.5s;
+            float: left;
+            background-color: rgb(40, 40, 40);
+        }
+
+        section #pr-content .content:nth-child(odd) {
+            animation: transitionIn 1s;
+        }
+
+        section #pr-content .content:nth-child(even) {
+            opacity: 0;
+            animation: transitionIn 1s forwards;
+            animation-delay: .25s;
+        }
+
+        section #pr-content .invis {
+            visibility: hidden;
+        }
+
+        section #pr-content .project p {
+            padding: 10px 10px 0px 10px;
+        }
+        
+        section #pr-content .content h2 {
+            position: absolute;
+            top: 42%;
+            width: 100%;
+            text-align: center;
+            color: rgb(233, 233, 233);
+            z-index: 30;
+            /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+            text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        section #pr-content .a {
+            left: 10%;
+        }
+
+        section #pr-content .b {
+            left: 35%;
+        }
+
+        section #pr-content .c {
+            left: 60%;
+        }
+
+        section #pr-content .project .pr-img {
+            max-height: 200px;
+            overflow: hidden;
+        }
+
+        section #pr-content .project img {
+            width: 350px;
+        }
+
+        section #pr-content .project:hover {
+            height: 400px;
+            position: relative;
+            z-index: 20;
+            margin-bottom: 10px;
+        }
+}
+.animate {
+    animation-duration: 1s;
+}
+
+/*https://www.youtube.com/watch?v=zWB219zf1og*/
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes top-bot {
+    from {
+        opacity: 0;
+        margin-top: -5px;
+    }
+
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}

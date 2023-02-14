@@ -1,0 +1,1706 @@
+﻿* { /*Everything*/
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    color: rgb(216, 216, 216);
+}
+body {
+    background-color: green;
+}
+
+#hm-header {
+    background: none;
+}
+/*Section*/
+section {
+    min-height: 82.1vh;
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 0;
+    margin: 0 auto;
+}
+/*Phones*/
+@media only screen and (min-width: 359px) and (max-width: 361px) {
+    /*Homepage*/
+    #hm {
+        animation: hm 1s;
+    }
+
+        #hm #hm-left {
+            float: left;
+        }
+
+        #hm #hm-right {
+            float: right;
+            animation: hm 1s;
+        }
+
+        #hm #hm-content {
+            padding: 25px 0px 0px 15px;
+            letter-spacing: 5px;
+        }
+
+    #hm-content h1 {
+        font-size: 35px;
+    }
+
+    #hm-content h2 {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    #hm-content h1 span {
+        font-size: 15px;
+    }
+
+    #s-menu {
+        position: absolute;
+        top: 10px;
+        width: 200px;
+    }
+
+        #s-menu ul {
+            margin-left: 10px;
+        }
+
+            #s-menu ul li {
+                list-style: none;
+                margin-top: 5px;
+            }
+
+                #s-menu ul li a {
+                    display: block;
+                    float: left;
+                    width: 60px;
+                    height: 60px;
+                    margin: 0px 20px 0px 0px;
+                    overflow: hidden;
+                    transition: width .4s;
+                }
+
+                    #s-menu ul li a p {
+                        padding-top: 15px;
+                        visibility: hidden;
+                    }
+
+        #s-menu li a img {
+            width: 100%;
+        }
+
+    /*About me*/
+    #ab-box {
+        float: right;
+        position: absolute;
+        left: 91.4%;
+        top: 15%;
+    }
+
+    #ab-btn-box {
+        width: 80px;
+        position: absolute;
+        right: -55px;
+        overflow: hidden;
+        transition: width 1s;
+    }
+
+    #ab-btn {
+        width: 85px;
+        height: 56px;
+        display: block;
+        background-color: rgba(216, 216, 216, 0);
+        transition: padding 1s, background-color 1s;
+    }
+
+    #ab-btn-box:hover #ab-btn {
+        background-color: rgba(216, 216, 216, 0.65);
+    }
+
+    #ab-btn:hover {
+        cursor: pointer;
+    }
+
+    #ab-btn img {
+        float: left;
+        width: 60px;
+    }
+
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+
+    #ab-info {
+        visibility: hidden;
+        position: relative;
+        left: 0%;
+        top: 20px;
+        width: 350px;
+        background-color: green;
+        height: 0px;
+        overflow: visible;
+    }
+
+        #ab-info div {
+            height: 775px;
+            overflow: scroll;
+            padding: 0px 18px 0px 0px;
+        }
+
+            #ab-info div img {
+                float: left;
+                width: 200px;
+                padding-right: 10px;
+            }
+
+            #ab-info div p {
+                text-align: justify;
+            }
+}
+@media only screen and (min-width: 362px) and (max-width: 391px) {
+    /*Homepage*/
+    #hm {
+        animation: hm 1s;
+    }
+
+        #hm #hm-left {
+            float: left;
+        }
+
+        #hm #hm-right {
+            float: right;
+            animation: hm 1s;
+        }
+
+        #hm #hm-content {
+            padding: 25px 0px 0px 15px;
+            letter-spacing: 5px;
+        }
+
+    #hm-content h1 {
+        font-size: 40px;
+    }
+
+    #hm-content h2 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    #hm-content h1 span {
+        font-size: 15px;
+    }
+
+    #s-menu {
+        position: absolute;
+        top: 10px;
+        width: 200px;
+    }
+
+        #s-menu ul {
+            margin-left: 10px;
+        }
+
+            #s-menu ul li {
+                list-style: none;
+                margin-top: 5px;
+            }
+
+                #s-menu ul li a {
+                    display: block;
+                    float: left;
+                    width: 60px;
+                    height: 60px;
+                    margin: 0px 20px 0px 0px;
+                    overflow: hidden;
+                    transition: width .4s;
+                }
+
+                    #s-menu ul li a p {
+                        padding-top: 15px;
+                        visibility: hidden;
+                    }
+
+        #s-menu li a img {
+            width: 100%;
+        }
+
+    /*About me*/
+    #ab-box {
+        float: right;
+        position: absolute;
+        left: 91.4%;
+        top: 15%;
+    }
+
+    #ab-btn-box {
+        width: 80px;
+        position: absolute;
+        right: -55px;
+        overflow: hidden;
+        transition: width 1s;
+    }
+
+    #ab-btn {
+        width: 85px;
+        height: 75px;
+        padding: 2px 0px 2px 2px;
+        display: block;
+        background-color: rgba(216, 216, 216, 0);
+        transition: padding 1s, background-color 1s;
+    }
+
+    #ab-btn-box:hover #ab-btn {
+        padding: 2px 7px 2px 2px;
+        background-color: rgba(216, 216, 216, 0.65);
+    }
+
+    #ab-btn:hover {
+        cursor: pointer;
+    }
+
+    #ab-btn img {
+        float: left;
+        width: 75px;
+    }
+
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+
+    #ab-info {
+        visibility: hidden;
+        position: relative;
+        left: 0%;
+        top: 20px;
+        width: 385px;
+        height: 0px;
+        overflow: visible;
+    }
+
+        #ab-info div {
+            height: 775px;
+            overflow: scroll;
+            padding: 0px 18px 0px 0px;
+        }
+
+            #ab-info div img {
+                float: left;
+                width: 200px;
+                padding-right: 10px;
+            }
+
+            #ab-info div p {
+                text-align: justify;
+            }
+}
+@media only screen and (min-width: 392px) and (max-width: 415px){
+    /*Homepage*/
+    #hm {
+        animation: hm 1s;
+    }
+
+        #hm #hm-left {
+            float: left;
+        }
+
+        #hm #hm-right {
+            float: right;
+            animation: hm 1s;
+        }
+
+        #hm #hm-content {
+            padding: 25px 0px 0px 15px;
+            letter-spacing: 5px;
+        }
+
+    #hm-content h1 {
+        font-size: 40px;
+    }
+
+    #hm-content h2 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    #hm-content h1 span {
+        font-size: 15px;
+    }
+
+    #s-menu {
+        position: absolute;
+        top: 10px;
+        width: 200px;
+    }
+
+        #s-menu ul {
+            margin-left: 10px;
+        }
+
+            #s-menu ul li {
+                list-style: none;
+                margin-top: 5px;
+            }
+
+                #s-menu ul li a {
+                    display: block;
+                    float: left;
+                    width: 60px;
+                    height: 60px;
+                    margin: 0px 20px 0px 0px;
+                    overflow: hidden;
+                    transition: width .4s;
+                }
+
+                    #s-menu ul li a p {
+                        padding-top: 15px;
+                        visibility: hidden;
+                    }
+
+        #s-menu li a img {
+            width: 100%;
+        }
+
+    /*About me*/
+    #ab-box {
+        float: right;
+        position: absolute;
+        left: 91.4%;
+        top: 15%;
+    }
+
+    #ab-btn-box {
+        width: 80px;
+        position: absolute;
+        right: -55px;
+        overflow: hidden;
+        transition: width 1s;
+    }
+
+    #ab-btn {
+        width: 85px;
+        height: 75px;
+        padding: 2px 0px 2px 2px;
+        display: block;
+        background-color: rgba(216, 216, 216, 0);
+        transition: padding 1s, background-color 1s;
+    }
+
+    #ab-btn-box:hover #ab-btn {
+        padding: 2px 7px 2px 2px;
+        background-color: rgba(216, 216, 216, 0.65);
+    }
+
+    #ab-btn:hover {
+        cursor: pointer;
+    }
+
+    #ab-btn img {
+        float: left;
+        width: 75px;
+    }
+
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+
+    #ab-info {
+        visibility: hidden;
+        position: relative;
+        left: 0%;
+        top: 20px;
+        width: 400px;
+        height: 0px;
+        overflow: visible;
+    }
+
+        #ab-info div {
+            height: 775px;
+            overflow: scroll;
+            padding: 0px 18px 0px 0px;
+        }
+
+            #ab-info div img {
+                float: left;
+                width: 200px;
+                border-radius: 100%;
+                shape-outside: circle();
+                padding-right: 25px;
+            }
+
+            #ab-info div p {
+                text-align: justify;
+            }
+}
+/*Tablets*/
+@media only screen and (min-width: 600px) and (max-width: 766px) {
+    /*Homepage*/
+    #hm {
+        animation: hm 1s;
+    }
+
+        #hm #hm-left {
+            float: left;
+        }
+
+        #hm #hm-right {
+            float: right;
+            animation: hm 1s;
+        }
+
+        #hm #hm-content {
+            padding: 25px 0px 0px 125px;
+            letter-spacing: 5px;
+        }
+
+    #hm-content h1 {
+        font-size: 50px;
+    }
+
+    #hm-content h2 {
+        font-size: 20px;
+        margin-left: 100px;
+    }
+
+    #hm-content h1 span {
+        font-size: 15px;
+    }
+
+    #s-menu {
+        position:absolute;
+        top: 10px;
+        width: 200px;
+    }
+
+        #s-menu ul {
+            margin-left: 10px;
+        }
+
+            #s-menu ul li {
+                list-style: none;
+                margin-top: 5px;
+            }
+
+                #s-menu ul li a {
+                    display: block;
+                    float:left;
+                    width: 60px;
+                    height: 60px;
+                    margin: 0px 20px 0px 0px;
+                    overflow: hidden;
+                    transition: width .4s;
+                }
+                    #s-menu ul li a p {
+                        padding-top: 15px;
+                        visibility: hidden;
+                    }
+
+        #s-menu li a img {
+            width: 100%;
+        }
+
+    /*About me*/
+    #ab-box {
+        float: right;
+        position: fixed;
+        left: 91.4%;
+        top: 15%;
+    }
+
+    #ab-btn-box {
+        width: 80px;
+        position: absolute;
+        right: -55px;
+        overflow: hidden;
+        transition: width 1s;
+    }
+    #ab-btn {
+        width: 85px;
+        height: 75px;
+        padding: 2px 0px 2px 2px;
+        display: block;
+        background-color: rgba(216, 216, 216, 0);
+        transition: padding 1s, background-color 1s;
+    }
+
+    #ab-btn-box:hover #ab-btn {
+        padding: 2px 7px 2px 2px;
+        background-color: rgba(216, 216, 216, 0.65);
+    }
+
+    #ab-btn:hover {
+        cursor: pointer;
+    }
+
+    #ab-btn img {
+        float: left;
+        width: 75px;
+    }
+
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+
+    #ab-info {
+        visibility: hidden;
+        position: relative;
+        left: -5%;
+        top: 45px;
+        width: 550px;
+        height: 0px;
+        overflow: visible;
+    }
+
+        #ab-info div {
+            height: 775px;
+            overflow: scroll;
+            padding: 0px 18px 0px 0px;
+        }
+
+            #ab-info div img {
+                float: left;
+                width: 250px;
+                border-radius: 100%;
+                shape-outside: circle();
+                padding-right: 25px;
+            }
+
+            #ab-info div p {
+                text-align: justify;
+            }
+}
+@media only screen and (min-width: 767px) and (max-width: 768px) {
+    /*Homepage*/
+    #hm {
+        animation: hm 1s;
+    }
+
+        #hm #hm-left {
+            float: left;
+        }
+
+        #hm #hm-right {
+            float: right;
+            animation: hm 1s;
+        }
+
+        #hm #hm-content {
+            padding: 25px 0px 0px 125px;
+            letter-spacing: 5px;
+        }
+
+    #hm-content h1 {
+        font-size: 50px;
+    }
+
+    #hm-content h2 {
+        font-size: 20px;
+        margin-left: 100px;
+    }
+
+    #hm-content h1 span {
+        font-size: 15px;
+    }
+
+    #s-menu {
+        position:absolute;
+        top: 10px;
+        width: 200px;
+    }
+
+        #s-menu ul {
+            margin-left: 10px;
+        }
+
+            #s-menu ul li {
+                list-style: none;
+                margin-top: 5px;
+            }
+
+                #s-menu ul li a {
+                    display: block;
+                    float:left;
+                    width: 60px;
+                    height: 60px;
+                    margin: 0px 20px 0px 0px;
+                    overflow: hidden;
+                    transition: width .4s;
+                }
+                    #s-menu ul li a p {
+                        padding-top: 15px;
+                        visibility: hidden;
+                    }
+
+        #s-menu li a img {
+            width: 100%;
+        }
+
+    /*About me*/
+    #ab-box {
+        float: right;
+        position: fixed;
+        left: 91.4%;
+        top: 15%;
+    }
+
+    #ab-btn-box {
+        width: 80px;
+        position: absolute;
+        right: -70px;
+        overflow: hidden;
+        transition: width 1s;
+    }
+    #ab-btn {
+        width: 85px;
+        height: 75px;
+        padding: 2px 0px 2px 2px;
+        display: block;
+        background-color: rgba(216, 216, 216, 0);
+        transition: padding 1s, background-color 1s;
+    }
+
+    #ab-btn-box:hover #ab-btn {
+        padding: 2px 7px 2px 2px;
+        background-color: rgba(216, 216, 216, 0.65);
+    }
+
+    #ab-btn:hover {
+        cursor: pointer;
+    }
+
+    #ab-btn img {
+        float: left;
+        width: 75px;
+    }
+
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+
+    #ab-info {
+        visibility: hidden;
+        position: relative;
+        left: -15%;
+        top: 45px;
+        width: 600px;
+        height: 0px;
+        overflow: visible;
+    }
+
+        #ab-info div {
+            height: 765px;
+            overflow: scroll;
+            padding: 0px 18px 0px 0px;
+        }
+
+            #ab-info div img {
+                float: left;
+                width: 250px;
+                border-radius: 100%;
+                shape-outside: circle();
+                padding-right: 25px;
+            }
+
+            #ab-info div p {
+                text-align: justify;
+            }
+}
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+    /*Homepage*/
+    #hm {
+        animation: hm 1s;
+    }
+
+        #hm #hm-left {
+            float: left;
+        }
+
+        #hm #hm-right {
+            float: right;
+            animation: hm 1s;
+        }
+
+        #hm #hm-content {
+            padding: 25px 0px 0px 125px;
+            letter-spacing: 5px;
+        }
+
+    #hm-content h1 {
+        font-size: 50px;
+    }
+
+    #hm-content h2 {
+        font-size: 20px;
+        margin-left: 100px;
+    }
+
+    #hm-content h1 span {
+        font-size: 15px;
+    }
+
+    #s-menu {
+        /*margin-top: 310px;*/
+        margin-top: 75px;
+    }
+
+        #s-menu ul {
+            margin-left: 10px;
+        }
+
+            #s-menu ul li {
+                list-style: none;
+                margin-top: 5px;
+            }
+
+                #s-menu ul li a {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    overflow: hidden;
+                    transition: width .4s;
+                }
+
+                    #s-menu ul li a:hover {
+                        width: 130px;
+                    }
+
+                    #s-menu ul li a div {
+                        display: block;
+                        float: left;
+                        margin: -45px 0px 0px 30px;
+                        width: 100px;
+                        height: 50px;
+                        text-align: center;
+                        transition: margin-left .75s;
+                    }
+
+                    #s-menu ul li a p {
+                        padding-top: 15px;
+                    }
+
+        #s-menu li a img {
+            float: left;
+            width: 40px;
+            height: 40px;
+        }
+
+    /*About me*/
+    #ab-box {
+        float: right;
+        position: fixed;
+        left: 93.4%;
+        top: 15%;
+    }
+
+    #ab-btn-box {
+        width: 54px;
+        position: absolute;
+        right: -55px;
+        overflow: hidden;
+        transition: width 1s;
+    }
+
+        #ab-btn-box:hover {
+            width: 150px;
+        }
+
+    #ab-btn {
+        width: 85px;
+        height: 50px;
+        padding: 2px 0px 2px 2px;
+        display: block;
+        background-color: rgba(216, 216, 216, 0);
+        transition: padding 1s, background-color 1s;
+    }
+
+    #ab-btn-box:hover #ab-btn {
+        padding: 2px 75px 2px 2px;
+        background-color: rgba(216, 216, 216, 0.65);
+    }
+
+    #ab-btn:hover {
+        cursor: pointer;
+    }
+
+    #ab-btn img {
+        float: left;
+        width: 50px;
+    }
+
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+
+    #ab-info {
+        visibility: hidden;
+        position: relative;
+        left: -10%;
+        top: -125px;
+        width: 650px;
+        height: 0px;
+        overflow: visible;
+    }
+
+        #ab-info div {
+            height: 775px;
+            overflow: scroll;
+            padding: 0px 18px 0px;
+        }
+
+            #ab-info div img {
+                float: left;
+                width: 250px;
+                border-radius: 100%;
+                shape-outside: circle();
+                padding-right: 25px;
+            }
+
+            #ab-info div p {
+                text-align: justify;
+            }
+}
+@media only screen and (min-width: 801px) and (max-width: 963px) {
+    /*Homepage*/
+    #hm {
+        animation: hm 1s;
+    }
+
+        #hm #hm-left {
+            float: left;
+        }
+
+        #hm #hm-right {
+            float: right;
+            animation: hm 1s;
+        }
+
+        #hm #hm-content {
+            padding: 75px 0px 0px 125px;
+            letter-spacing: 5px;
+        }
+
+    #hm-content h1 {
+        font-size: 60px;
+    }
+
+    #hm-content h2 {
+        font-size: 20px;
+        margin-left: 100px;
+    }
+
+    #hm-content h1 span {
+        font-size: 15px;
+    }
+
+    #s-menu {
+        /*margin-top: 310px;*/
+        margin-top: 150px;
+    }
+
+        #s-menu ul {
+            margin-left: 10px;
+        }
+
+            #s-menu ul li {
+                list-style: none;
+                margin-top: 5px;
+            }
+
+                #s-menu ul li a {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    overflow: hidden;
+                    transition: width .4s;
+                }
+
+                    #s-menu ul li a:hover {
+                        width: 130px;
+                    }
+
+                    #s-menu ul li a div {
+                        display: block;
+                        float: left;
+                        margin: -45px 0px 0px 30px;
+                        width: 100px;
+                        height: 50px;
+                        text-align: center;
+                        transition: margin-left .75s;
+                    }
+
+                    #s-menu ul li a p {
+                        padding-top: 15px;
+                    }
+
+        #s-menu li a img {
+            float: left;
+            width: 40px;
+            height: 40px;
+        }
+
+    /*About me*/
+    #ab-box {
+        float: right;
+        position: fixed;
+        left: 94.5%;
+        top: 35%;
+    }
+
+    #ab-btn-box {
+        width: 54px;
+        position: absolute;
+        right: -55px;
+        overflow: hidden;
+        transition: width 1s;
+    }
+
+        #ab-btn-box:hover {
+            width: 150px;
+        }
+
+    #ab-btn {
+        width: 85px;
+        height: 50px;
+        padding: 2px 0px 2px 2px;
+        display: block;
+        z-index: 2;
+        background-color: rgba(216, 216, 216, 0);
+        transition: padding 1s, background-color 1s;
+    }
+
+    #ab-btn-box:hover #ab-btn {
+        padding: 2px 75px 2px 2px;
+        background-color: rgba(216, 216, 216, 0.65);
+    }
+
+    #ab-btn:hover {
+        cursor: pointer;
+    }
+
+    #ab-btn img {
+        float: left;
+        width: 50px;
+    }
+
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+
+    #ab-info {
+        visibility: hidden;
+        position: relative;
+        left: -15%;
+        top: -150px;
+        width: 750px;
+        height: 0px;
+        overflow: visible;
+    }
+
+        #ab-info div {
+            height: 750px;
+            overflow: scroll;
+            padding: 0px 18px 0px;
+        }
+
+            #ab-info div img {
+                float: left;
+                width: 250px;
+                border-radius: 100%;
+                shape-outside: circle();
+                padding-right: 25px;
+            }
+
+            #ab-info div p {
+                text-align: justify;
+            }
+}
+/*Desktop*/
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+    /*Homepage*/
+    #hm {
+        animation: hm 1s;
+    }
+
+        #hm #hm-left {
+            float: left;
+        }
+
+        #hm #hm-right {
+            float: right;
+            animation: hm 1s;
+        }
+
+    #hm #hm-content {
+        padding: 75px 0px 0px 125px;
+        letter-spacing: 5px;
+    }
+
+    #hm-content h1 {
+        font-size: 60px;
+    }
+
+    #hm-content h2 {
+        font-size: 20px;
+        margin-left: 100px;
+    }
+
+    #hm-content h1 span {
+        font-size: 15px;
+    }
+
+    #s-menu {
+        /*margin-top: 310px;*/
+        margin-top: 150px;
+    }
+
+        #s-menu ul {
+            margin-left: 10px;
+        }
+
+            #s-menu ul li {
+                list-style: none;
+                margin-top: 5px;
+            }
+
+                #s-menu ul li a {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    overflow: hidden;
+                    transition: width .4s;
+                }
+
+                    #s-menu ul li a:hover {
+                        width: 130px;
+                    }
+
+                    #s-menu ul li a div {
+                        display: block;
+                        float: left;
+                        margin: -45px 0px 0px 30px;
+                        width: 100px;
+                        height: 50px;
+                        text-align: center;
+                        transition: margin-left .75s;
+                    }
+
+                    #s-menu ul li a p {
+                        padding-top: 15px;
+                    }
+
+        #s-menu li a img {
+            float: left;
+            width: 40px;
+            height: 40px;
+        }
+
+    /*About me*/
+    #ab-box {
+        float: right;
+        position: absolute;
+        left: 94.50%;
+        top: 20%;
+    }
+
+    #ab-btn-box {
+        width: 54px;
+        position: absolute;
+        right: -72px;
+        overflow: hidden;
+        transition: width 1s;
+    }
+
+        #ab-btn-box:hover {
+            width: 150px;
+        }
+
+    #ab-btn {
+        width: 85px;
+        height: 50px;
+        padding: 2px 0px 2px 2px;
+        display: block;
+        background-color: rgba(216, 216, 216, 0);
+        transition: padding 1s, background-color 1s;
+    }
+
+    #ab-btn-box:hover #ab-btn {
+        padding: 2px 75px 2px 2px;
+        background-color: rgba(216, 216, 216, 0.65);
+    }
+
+    #ab-btn:hover {
+        cursor: pointer;
+    }
+
+    #ab-btn img {
+        float: left;
+        width: 50px;
+    }
+
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+
+    #ab-info {
+        visibility: hidden;
+        position: relative;
+        left: -55px;
+        margin: 45px 0px 0px -100px;
+        width: 700px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+        #ab-info div {
+            height: 100%;
+            overflow: scroll;
+            padding: 0px 18px 0px;
+        }
+
+            #ab-info div img {
+                float: left;
+                width: 250px;
+                border-radius: 100%;
+                shape-outside: circle();
+                padding-right: 25px;
+            }
+
+            #ab-info div p {
+                text-align: justify;
+            }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1550px) {
+    /*Homepage*/
+    #hm {
+        animation: hm 1s;
+    }
+
+        #hm #hm-left {
+            float: left;
+        }
+
+        #hm #hm-right {
+            float: right;
+            animation: hm 1s;
+        }
+
+    #hm #hm-content {
+        padding: 100px 0px 0px 150px;
+        letter-spacing: 5px;
+    }
+
+    #hm-content h1 {
+        font-size: 65px;
+    }
+
+    #hm-content h2 {
+        font-size: 25px;
+        margin-left: 110px;
+    }
+
+    #hm-content h1 span {
+        font-size: 15px;
+    }
+
+    #s-menu {
+        /*margin-top: 310px;*/
+        margin-top: 150px;
+    }
+
+        #s-menu ul {
+            margin-left: 10px;
+        }
+
+            #s-menu ul li {
+                list-style: none;
+                margin-top: 5px;
+            }
+
+                #s-menu ul li a {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    overflow: hidden;
+                    transition: width .4s;
+                }
+
+                    #s-menu ul li a:hover {
+                        width: 130px;
+                    }
+
+                    #s-menu ul li a div {
+                        display: block;
+                        float: left;
+                        margin: -45px 0px 0px 30px;
+                        width: 100px;
+                        height: 50px;
+                        text-align: center;
+                        transition: margin-left .75s;
+                    }
+
+                    #s-menu ul li a p {
+                        padding-top: 15px;
+                    }
+
+        #s-menu li a img {
+            float: left;
+            width: 40px;
+            height: 40px;
+        }
+
+    /*About me*/
+    #ab-box {
+        float: right;
+        position: absolute;
+        left: 94.50%;
+        top: 20%;
+    }
+
+    #ab-btn-box {
+        width: 54px;
+        position: absolute;
+        right: -82px;
+        overflow: hidden;
+        transition: width 1s;
+    }
+
+        #ab-btn-box:hover {
+            width: 150px;
+        }
+
+    #ab-btn {
+        width: 85px;
+        height: 50px;
+        padding: 2px 0px 2px 2px;
+        display: block;
+        background-color: rgba(216, 216, 216, 0);
+        transition: padding 1s, background-color 1s;
+    }
+
+    #ab-btn-box:hover #ab-btn {
+        padding: 2px 75px 2px 2px;
+        background-color: rgba(216, 216, 216, 0.65);
+    }
+
+    #ab-btn:hover {
+        cursor: pointer;
+    }
+
+    #ab-btn img {
+        float: left;
+        width: 50px;
+    }
+
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+
+    #ab-info {
+        visibility: hidden;
+        position: relative;
+        top: 100px;
+        left: -150px;
+        margin: 45px 0px 0px -50px;
+        width: 700px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+        #ab-info div {
+            height: 100%;
+            overflow: scroll;
+            padding: 0px 18px 0px;
+        }
+
+            #ab-info div img {
+                float: left;
+                width: 250px;
+                border-radius: 100%;
+                shape-outside: circle();
+                padding-right: 25px;
+            }
+
+            #ab-info div p {
+                text-align: justify;
+            }
+}
+@media only screen and (min-width:1550px) and (max-width: 1600px) {
+    /*Homepage*/
+    #hm {
+        animation: hm 1s;
+    }
+
+        #hm #hm-left {
+            float: left;
+        }
+
+        #hm #hm-right {
+            float: right;
+            min-height: 463px;
+            animation: hm 1s;
+        }
+
+    #hm #hm-content {
+        padding: 100px 0px 0px 150px;
+        letter-spacing: 5px;
+    }
+
+    #hm-content h1 {
+        font-size: 80px;
+    }
+
+    #hm-content h2 {
+        font-size: 30px;
+        margin-left: 100px;
+    }
+
+    #hm-content h1 span {
+        font-size: 20px;
+    }
+
+    #s-menu {
+        /*margin-top: 310px;*/
+        margin-top: 150px;
+    }
+
+        #s-menu ul {
+            margin-left: 10px;
+        }
+
+            #s-menu ul li {
+                list-style: none;
+                margin-top: 5px;
+            }
+
+                #s-menu ul li a {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    overflow: hidden;
+                    transition: width .4s;
+                }
+
+                    #s-menu ul li a:hover {
+                        width: 130px;
+                    }
+
+                    #s-menu ul li a div {
+                        display: block;
+                        float: left;
+                        margin: -45px 0px 0px 30px;
+                        width: 100px;
+                        height: 50px;
+                        text-align: center;
+                        transition: margin-left .75s;
+                    }
+
+                    #s-menu ul li a p {
+                        padding-top: 15px;
+                    }
+
+        #s-menu li a img {
+            float: left;
+            width: 40px;
+            height: 40px;
+        }
+
+    /*About me*/
+    #ab-box {
+        float: right;
+        position: absolute;
+        left: 94.50%;
+        top: 20%;
+    }
+
+    #ab-btn-box {
+        width: 54px;
+        position: absolute;
+        right: -82px;
+        overflow: hidden;
+        transition: width 1s;
+    }
+
+        #ab-btn-box:hover {
+            width: 150px;
+        }
+
+    #ab-btn {
+        width: 85px;
+        height: 50px;
+        padding: 2px 0px 2px 2px;
+        display: block;
+        background-color: rgba(216, 216, 216, 0);
+        transition: padding 1s, background-color 1s;
+    }
+
+    #ab-btn-box:hover #ab-btn {
+        padding: 2px 75px 2px 2px;
+        background-color: rgba(216, 216, 216, 0.65);
+    }
+
+    #ab-btn:hover {
+        cursor: pointer;
+    }
+
+    #ab-btn img {
+        float: left;
+        width: 50px;
+    }
+
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+
+    #ab-info {
+        visibility: hidden;
+        margin: 45px 0px 0px -30px;
+        position: relative;
+        top: 100px;
+        left: -20%;
+        width: 800px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+        #ab-info div {
+            height: 100%;
+            overflow: scroll;
+            padding: 0px 18px 0px;
+        }
+
+            #ab-info div img {
+                float: left;
+                width: 250px;
+                border-radius: 100%;
+                shape-outside: circle();
+                padding-right: 25px;
+            }
+
+            #ab-info div p {
+                text-align: justify;
+            }
+}
+@media only screen and (min-width: 1900px) and (max-width: 1920px) {
+    /*Homepage*/
+    #hm {
+        animation: hm 1s;
+    }
+
+        #hm #hm-left {
+            float: left;
+        }
+
+        #hm #hm-right {
+            float: right;
+            min-height: 463px;
+            animation: hm 1s;
+        }
+
+    #hm #hm-content {
+        padding: 100px 0px 0px 150px;
+        letter-spacing: 5px;
+    }
+
+    #hm-content h1 {
+        font-size: 80px;
+    }
+
+    #hm-content h2 {
+        font-size: 30px;
+        margin-left: 100px;
+    }
+
+    #hm-content h1 span {
+        font-size: 20px;
+    }
+
+    #s-menu {
+        /*margin-top: 310px;*/
+        margin-top: 150px;
+    }
+
+        #s-menu ul {
+            margin-left: 10px;
+        }
+
+            #s-menu ul li {
+                list-style: none;
+                margin-top: 5px;
+            }
+
+                #s-menu ul li a {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    overflow: hidden;
+                    transition: width .4s;
+                }
+
+                    #s-menu ul li a:hover {
+                        width: 130px;
+                    }
+
+                    #s-menu ul li a div {
+                        display: block;
+                        float: left;
+                        margin: -45px 0px 0px 30px;
+                        width: 100px;
+                        height: 50px;
+                        text-align: center;
+                        transition: margin-left .75s;
+                    }
+
+                    #s-menu ul li a p {
+                        padding-top: 15px;
+                    }
+
+        #s-menu li a img {
+            float: left;
+            width: 40px;
+            height: 40px;
+        }
+
+    /*About me*/
+    #ab-box {
+        float: right;
+        position: absolute;
+        left: 96.50%;
+        top: 20%;
+    }
+
+    #ab-btn-box {
+        width: 54px;
+        position: absolute;
+        right: -82px;
+        overflow: hidden;
+        transition: width 1s;
+    }
+
+        #ab-btn-box:hover {
+            width: 150px;
+        }
+
+    #ab-btn {
+        width: 85px;
+        height: 50px;
+        padding: 2px 0px 2px 2px;
+        display: block;
+        background-color: rgba(216, 216, 216, 0);
+        transition: padding 1s, background-color 1s;
+    }
+
+    #ab-btn-box:hover #ab-btn {
+        padding: 2px 75px 2px 2px;
+        background-color: rgba(216, 216, 216, 0.65);
+    }
+
+    #ab-btn:hover {
+        cursor: pointer;
+    }
+
+    #ab-btn img {
+        float: left;
+        width: 50px;
+    }
+
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+
+    #ab-info {
+        visibility: hidden;
+        margin: 45px 0px 0px 100px;
+        width: 1000px;
+        position: relative;
+        left: -20%;
+        top: 15px;
+        height: 0px;
+        overflow: hidden;
+    }
+
+        #ab-info div {
+            height: 100%;
+            overflow: scroll;
+            padding: 0px 18px 0px;
+        }
+
+            #ab-info div img {
+                float: left;
+                width: 250px;
+                border-radius: 100%;
+                shape-outside: circle();
+                padding-right: 25px;
+            }
+
+            #ab-info div p {
+                text-align: justify;
+            }
+}
+/*https://www.youtube.com/watch?v=zWB219zf1og*/
+
+@keyframes hm {
+    from {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes top-bot {
+    from {
+        opacity: 0;
+        margin-top: -5px;
+    }
+
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}

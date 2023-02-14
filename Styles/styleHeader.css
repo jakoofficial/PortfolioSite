@@ -1,0 +1,60 @@
+﻿/*Header - Menu*/
+header {
+    background-color: rgb(30, 30, 30);
+    background-image: linear-gradient(120deg, rgb(35, 35, 35) 32%, rgb(40, 40, 40) 35%, rgb(40, 40, 40));
+    height: 65px;
+    width: 97.4%;
+    padding: 25px 20px 0px;
+    text-align: right;
+    display: block;
+}
+
+    header #title {
+        float: left;
+        text-align: left;
+        height: 65px;
+        width: fit-content;
+        animation: top-bot 1s;
+    }
+
+    header h1 {
+        display: inline-block;
+        letter-spacing: 5px;
+    }
+
+    header p {
+        font-size: 14px;
+        padding-left: 25px;
+    }
+
+
+/*Navigation*/
+nav ul {
+    list-style-type: none;
+    padding: 0px 18px 0px 0px;
+    overflow: hidden;
+    height: 90px;
+    width: fit-content;
+    float: right;
+    margin-top: -25px;
+    animation: transitionIn 1s;
+}
+
+nav li {
+    float: right;
+}
+
+    nav li a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 55px 16px;
+        height: 100px;
+        transition: padding-top 0.5s, color .1s, background-color 0.5s;
+    }
+
+        nav li a:hover {
+            padding-top: 40px;
+            background-color: rgb(185, 185, 185);
+            color: rgb(0, 0, 0);
+        }

@@ -1,0 +1,333 @@
+﻿* { /*Everything*/
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    color: rgb(216, 216, 216);
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+}
+
+/*Header - Menu*/
+header {
+    background-color: rgb(30, 30, 30);
+    background-image: linear-gradient(120deg, rgb(35, 35, 35) 32%, rgb(40, 40, 40) 35%, rgb(40, 40, 40));
+    height: 65px;
+    width: 97.4%;
+    padding: 25px 20px 0px;
+    text-align: right;
+    display: block;
+}
+
+    header #title {
+        float: left;
+        text-align: left;
+        height: 65px;
+        width: fit-content;
+        animation: top-bot 1s;
+    }
+    header h1 {
+        display: inline-block;
+        letter-spacing: 5px;
+    }
+    header p {
+        font-size: 14px;
+        padding-left: 25px;
+    }
+ 
+#hm-header {
+    background: none;
+}
+
+/*Navigation*/
+nav ul {
+    list-style-type: none;
+    padding: 0px 18px 0px 0px;
+    overflow: hidden;
+    height: 90px;
+    width: fit-content;
+    float: right;
+    margin-top: -25px;
+    animation:transitionIn 1s;
+}
+nav li {
+    float: right;
+}
+    nav li a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 55px 16px;
+        height:100px;
+        transition: padding-top 0.5s, color .1s, background-color 0.5s;
+    }
+        nav li a:hover {
+            padding-top: 40px;
+            background-color: rgb(185, 185, 185);
+            color: rgb(0, 0, 0);
+        }
+
+/*Section*/
+section {
+    min-height: 82.1vh;
+    width: 100%;
+    display: block;
+}
+.container{
+    max-width: 100%;
+    padding: 0 0;
+    margin: 0 auto;
+}
+
+/*Homepage*/
+#hm {
+    animation: hm 1s;
+}
+#hm #hm-left{
+    float:left;
+}
+    #hm #hm-right {
+        float: right;
+        min-height: 463px;
+        animation: hm 1s;
+    }
+@keyframes hm{
+    from{
+        opacity: 0;
+        margin-top: -20px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+    #hm #hm-content {
+        padding: 100px 0px 0px 150px;
+        letter-spacing: 5px;
+    }
+#hm-content h1 {
+    font-size: 80px;
+}
+#hm-content h2 {
+    font-size: 30px;
+    margin-left: 100px;
+}
+#hm-content h1 span {
+    font-size: 20px;
+}
+#s-menu {
+    /*margin-top: 310px;*/
+    margin-top: 150px;
+}
+#s-menu ul {
+    margin-left: 10px;
+}
+#s-menu ul li {
+    list-style: none;
+    margin-top: 5px;
+}
+    #s-menu ul li a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        transition: width .4s;
+    }
+    #s-menu ul li a:hover {
+        width: 130px;
+    }
+        #s-menu ul li a div {
+            display: block;
+            float: left;
+            margin: -45px 0px 0px 30px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            transition: margin-left .75s;
+        }
+        #s-menu ul li a p {
+            padding-top: 15px;
+        }
+    #s-menu li a img {
+        float: left;
+        width: 40px;
+        height: 40px;
+    }
+
+/*About me*/
+#ab-box {
+    float: right;
+    position: absolute;
+    left: 94.50%;
+    top: 20%;
+}
+#ab-btn-box{
+    width:54px;
+    position: absolute;
+    right: -82px;
+    overflow: hidden;
+    transition: width 1s;
+}
+    #ab-btn-box:hover {
+        width: 150px;
+    }
+#ab-btn {
+    width: 85px;
+    height: 50px;
+    padding: 2px 0px 2px 2px;
+    display: block;
+    background-color: rgba(216, 216, 216, 0);
+    transition: padding 1s, background-color 1s;
+}
+#ab-btn-box:hover #ab-btn {
+    padding: 2px 75px 2px 2px;
+    background-color: rgba(216, 216, 216, 0.65);
+}
+
+#ab-btn:hover{
+    cursor:pointer;
+}
+    #ab-btn img{
+        float:left;
+        width: 50px;
+    }
+    #ab-btn p {
+        text-align: right;
+        width: 125px;
+        padding: 15px 5px 0px 0px;
+        color: rgb(40, 40, 40);
+    }
+#ab-info {
+    visibility: hidden;
+    margin: 45px 0px 0px -15px;
+    width: 700px;
+    height: 0px;
+    overflow: hidden;
+}
+#ab-info div{
+    height: 100%;
+    overflow: scroll;
+    padding: 0px 18px 0px;
+}
+#ab-info div img {
+    float:left;
+    width: 250px;
+    border-radius: 100%;
+    shape-outside: circle();
+    padding-right: 25px;
+}
+#ab-info div p{
+    text-align:justify;
+}
+/*Projects*/
+/*http://jsfiddle.net/5wa3X/6/ */
+section #pr-content {
+    min-height: 82.1vh;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+}
+section #pr-content .content {
+    position: relative;
+    height: 200px;
+    padding: 25px 0px 0px 0;
+    margin-left: 12%;
+}
+    section #pr-content .project {
+        position: absolute;
+        border: 1px solid rgb(99, 99, 99);
+        width: 350px;
+        height: 200px;
+        overflow: hidden;
+        z-index: 1;
+        transition: height 0.5s, z-index 0.5s;
+        float: left;
+        background-color: rgb(40, 40, 40);
+    }
+    section #pr-content .content:nth-child(odd) {
+        animation: transitionIn 1s;
+    }
+    section #pr-content .content:nth-child(even){
+        opacity: 0;
+        animation: transitionIn 1s forwards;
+        animation-delay: .25s;
+    }
+    section #pr-content .invis {
+        visibility: hidden;
+    }
+    section #pr-content .project p {
+        padding:10px 10px 0px 10px;
+    }
+    section #pr-content .a {
+        left: 50px;
+    }
+    section #pr-content .content h2 {
+        position: absolute;
+        top: 42%;
+        width: 100%;
+        text-align: center;
+        color: rgb(233, 233, 233);
+        z-index: 30;
+        /*https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+        text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5), 1px 1px 0 rgba(0, 0, 0, 0.5);
+    }
+    section #pr-content .b {
+        left: 400px;
+    }
+    section #pr-content .c{
+        left: 750px;
+    }
+    section #pr-content .project .pr-img {
+        max-height: 200px;
+        overflow: hidden;
+    }
+    section #pr-content .project img {
+        width: 350px;
+    }
+        section #pr-content .project:hover {
+            height: 400px;
+            position: relative;
+            z-index:20;
+            margin-bottom:10px;
+        }
+
+/*Footer*/
+footer {
+    border-top: 1px solid rgb(99, 99, 99);
+    height: 35px;
+    width: 100%;
+    display: block;
+    animation: transitionIn 1s;
+}
+    footer p {
+        font-size: 13px;
+        padding: 9px 15px 0px 5px;
+        float: right;
+    }
+
+.animate{
+    animation-duration: 1s;
+}
+
+/*https://www.youtube.com/watch?v=zWB219zf1og*/
+@keyframes transitionIn {
+    from{
+        opacity:0;
+
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes top-bot {
+    from {
+        opacity: 0;
+        margin-top: -5px;
+    }
+
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
